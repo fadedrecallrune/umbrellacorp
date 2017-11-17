@@ -1,0 +1,143 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(./images/umb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 100px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ef9a9a;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 5px 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover {
+  transform: scale(1.15);
+}
+
+.card-header {
+  color: #d32f2f;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #ef9a9a;
+  background-color: #ffebee;
+  padding: 5px 10px;
+}
+
+.main-description {
+  color: #d32f2f;
+  font-size: 12px;
+  text-align: center;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textshrink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textshrink h1 {
+  font-size: 4vw;
+  color: #a1080e;
+  white-space: nowrap;
+}
+
+.loginForm {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #3e363f;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.Input {
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid rgba(255, 252, 232, 0.4);
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.input {
+  outline: none;
+  border: 0;
+  color: #fffce8;
+  background: transparent;
+  font-family: Lato, sans-serif;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input:focus ~ label {
+  opacity: 1;
+}
+
+.label {
+  font-family: FontAwesome;
+  font-size: 13px;
+  opacity: 0.1;
+  transition: opacity 0.5s ease;
+}
+
+.label::before {
+  align-items: center;
+  color: #fffce8;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.button {
+  align-items: center;
+  background: #dd403a;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  justify-content: center;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 9px 10px 11px;
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.09);
+}
+
+.but {
+  text-decoration: none;
+}
